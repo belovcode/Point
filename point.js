@@ -1,28 +1,39 @@
 $(document).ready(function () {
 	
 
+var img1 = $('.slidImg1').clone();
+var img2 = $('.slidImg2').clone();
+var img3 = $('.slidImg3').clone();
+
+var text1 = $('.slidersText1').clone();
+var text2 =	$('.slidersText2').clone();
+var text3 =	$('.slidersText3').clone();
 
 function sliders () {
-	$('.slidImg1').fadeIn(1000, function () {
+	img1.appendTo($('.sliders')).fadeIn(1000, function () {
 		setTimeout(function () {
-			$('.slidersText1').fadeIn(500);
+			text1.appendTo($('.sliders')).fadeIn(500);
 		},200);
 		function shouImg2 () {
-			$('.slidImg1, .slidersText1').fadeOut(500,function(){
-
-				$('.slidImg2').fadeIn(1000,function () {
+			img1.fadeOut(500);
+			text1.fadeOut(500,function(){
+				img1.remove();
+				img2.appendTo($('.sliders')).fadeIn(1000,function () {
 					setTimeout(function () {
-						$('.slidersText2').fadeIn(500);
+						text2.appendTo($('.sliders')).fadeIn(500);
 					},200);
 					function shouImg3 () {
-						$('.slidImg2, .slidersText2').fadeOut(500, function () {
-
-							$('.slidImg3').fadeIn(1000, function () {
+						img2.fadeOut(500);
+						text2.fadeOut(500, function () {
+							img2.remove();
+							img3.appendTo($('.sliders')).fadeIn(1000, function () {
 								setTimeout(function () {
-									$('.slidersText3').fadeIn(500);
+									text3.appendTo($('.sliders')).fadeIn(500);
 								},200);
 								function restart () {
-									$('.slidImg3, .slidersText3').fadeOut(500,function  () {
+									img3.fadeOut(500);
+									text3.fadeOut(500,function  () {
+										img3.remove();
 										sliders();
 									});
 								};

@@ -33,26 +33,26 @@ body {
 	line-height: 30px;
 	font-size: 13px;
 }
-.searchWrap {
+.searchForm {
 	float: right;
-	width: 240px;
 	padding: 20px;
 	background-color: black;
 	border-radius: 10px;
 }
+.searchWrap {
+	background-color: white;
+	border-radius: 6px;
+}
 .searchWrap input {
 	float: left;
 	width: 200px;
-	height: 38px;
-	padding-left: 20px;
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
+	margin: 7px 5px 5px 20px;
 	border: none;
 	font-size: 15px;
 	color: #9d9d9d;
+	outline: none;
 }
 .searchWrap input:focus {
-	border: solid thin #FFDD17;
 	outline: none;
 }
 .searchWrap div {
@@ -106,28 +106,28 @@ body {
 	background-color: white;
 	position: relative;
 }
-.slidImg2, .slidImg3 {
+.slidImg1, .slidImg2, .slidImg3 {
 	display: none;
 }
-.sliders div {
+.slidersText1, .slidersText2, .slidersText3 {
 	position: absolute;
 	top: 60px;
 	left: 100px;
 	display: none;
 }
-.sliders div h2 {
+.slidersText1 h2, .slidersText2 h2, .slidersText3 h2 {
 	margin-bottom: 5px;
 	font-size: 50px;
 	font-weight: normal;
 }
-.sliders div h1 {
+.slidersText1 h1, .slidersText2 h1, .slidersText3 h1 {
 	margin: 0px;
 	padding: 0px;
 	font-size: 75px;
 	color: #00a9ff;
 	letter-spacing: -2px;
 }
-.sliders div p {
+.slidersText1 p, .slidersText2 p, .slidersText3 p {
 	padding-top: 20px;
 	width: 350px;
 	font-size: 18px;
