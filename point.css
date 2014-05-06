@@ -29,6 +29,7 @@ body {
 }
 .logoWrap img {
 	display: block;
+	height: 100%;
 }
 .logoWrap span {
 	line-height: 30px;
@@ -205,6 +206,9 @@ body {
 	display: none;
 	width: 1000px;
 	margin: 0px auto;
+}
+.slidImg1 img, .slidImg2 img, .slidImg3 img {
+	width: 100%;
 }
 .slidersText1, .slidersText2, .slidersText3 {
 	position: absolute;
